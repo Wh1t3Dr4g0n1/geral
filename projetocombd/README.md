@@ -2,8 +2,9 @@
 
 PROJETO EM PYTHON DE BANCO DE DADOS.
 
-troque as informações do "get_connection()" para os de seu banco de dados. Usei o mysql workbench para criar o banco de dados, com as tabelas "professor" e "aluno".
-
+Troque as informações do "get_connection()" para os de seu banco de dados.
+Usei o mysql workbench para criar o banco de dados, com as tabelas "professor" e "aluno".
+ 
 - dados da tabela professor:
 
 id_pro INTEGER PRIMARY KEY,
