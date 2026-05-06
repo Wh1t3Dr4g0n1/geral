@@ -3,10 +3,10 @@ import os
 
 def get_connection(): # PREENCHA COM AS INFORMAÇÕES DO SEU BANCO DE DADOS
   return mysql.connector.connect(
-  host = " ",  
-  user = " ",  #USER
-  password = " ",  #PASSWORD
-  database = " ",  #DATABASE
+  host = "localhost",  #HOST
+  user = "root",  #USER
+  password = "2667",  #PASSWORD
+  database = "banco",  #
 )
     
 def create():
@@ -110,30 +110,4 @@ def delete():
      
     cursor.close()
     conexao.close()
-    
-def exemplo():
-     objeto = input("De qual tabela: ").lower()
-     os.system("cls")
-     
-     if objeto == "professor":
-      sg = "pro"
-      id_sg = "id_pro"
-     elif objeto == "aluno":
-       sg = "aluno"
-       id_sg = "id_aluno"
-       
-     pr = f"Colunas: (id_{sg}/nm_{sg}/cpf_{sg}/tl_{sg}/ende_{sg})"
-     print(pr)
-     coluna1 = input("Qual coluna deseja alterar: ")
-     escolhaid = input("De qual ID: ")
-     conexao = get_connection()
-     cursor = conexao.cursor()
-     escolha2 = input("O que deseja inserir: ")
-     exemploe = f"UPDATE {objeto} SET {coluna1} = (%s) WHERE {id_sg} = (%s)"
-     cursor.execute(exemploe, (escolha2,  escolhaid))
-     conexao.commit()
-     print("Concluido com sucesso!")
-     
-     cursor.close()
-     conexao.close()
   
