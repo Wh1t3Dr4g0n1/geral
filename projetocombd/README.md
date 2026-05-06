@@ -21,7 +21,7 @@ id_aluno INTEGER PRIMARY KEY,
 nm_aluno VARCHAR(50) NOT NULL,
 cpf_aluno VARCHAR(11) NOT NULL,
 tl_aluno VARCHAR(20), 
-ende_aluno VARCHAR(200),
+ende_aluno VARCHAR(200).
 
 (caso precise visualizar: https://prnt.sc/vtTKsoXxVt92)
 
