@@ -21,10 +21,12 @@ elif choice1 == "create":
   
   #FAZER UM CREATE COM BD
 elif choice1 == "update":
+  os.system("cls")
   crud1.altertable()
   
   #FAZER UM UPDATE COM BD
 elif choice1 == "delete":
+  os.system("cls")
   crud1.delete()
   #FAZER UM DELETE COM BD
 else:
